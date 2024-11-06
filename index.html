@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companheiros do Doctor</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+
+    <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="segoe-ui">Cadastro de Companheiros do Doctor</h1>
+    </header>
+
+    <main>
+        <!-- Formulário de Cadastro -->
+        <section id="cadastro">
+            <h2>Adicionar Companheiro</h2>
+            <form id="companheiro-form" onsubmit="addCompanheiro(event)">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="temporada" placeholder="Temporada" required>
+                <input type="number" id="idade" placeholder="Idade" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section id="lista-companheiro">
+            <h2>Companheiros</h2>
+            <ul class="lista-companheiro" id="companheiroList"></ul>
+        </section>        
+    </main>
+</body>
+</html>
